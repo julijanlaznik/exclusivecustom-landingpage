@@ -196,7 +196,7 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
                         {!isSubmitting && <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>}
                       </button>
                       <p className="text-center mt-6 text-[10px] md:text-xs text-white/30 uppercase tracking-[0.2em] font-sans">
-                        Odpovídáme průměrně do 2 hodin
+                        Odpovídáme průměrně do 30 minut
                       </p>
                     </div>
                   </form>

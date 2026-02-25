@@ -87,7 +87,7 @@ const ProjectsGrid: React.FC = () => {
         
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-black tracking-tight font-sans">
-            Podívejte se na naši práci
+            Mluví za nás naše práce
           </h2>
         </div>
 
