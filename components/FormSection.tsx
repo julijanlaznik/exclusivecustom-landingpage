@@ -6,7 +6,9 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [phone, setPhone] = useState('+420 ');
   const [isHeadlineVisible, setIsHeadlineVisible] = useState(false);
+  const [lockedHeight, setLockedHeight] = useState<number | null>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,32 +43,37 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  const form = e.target as HTMLFormElement;
-  const carType = (form.querySelector('#bodyType') as HTMLSelectElement).value;
-  const email = (form.querySelector('#email') as HTMLInputElement).value;
-  const message = (form.querySelector('#note') as HTMLTextAreaElement).value;
+    const form = e.target as HTMLFormElement;
+    const carType = (form.querySelector('#bodyType') as HTMLSelectElement).value;
+    const email = (form.querySelector('#email') as HTMLInputElement).value;
+    const message = (form.querySelector('#note') as HTMLTextAreaElement).value;
 
-  const payload = { carType, email, phone, message };
+    const payload = { carType, email, phone, message };
 
-  try {
-    await fetch('https://hooks.zapier.com/hooks/catch/25611644/ue3y3ao/', {
-      method: 'POST',
-      mode: 'no-cors',
-      body: new URLSearchParams(payload), // důležité: žádné JSON a žádné headers
-    });
+    try {
+      // Před odesláním zamkneme výšku kontejneru, aby se po odeslání nezmenšil
+      if (containerRef.current) {
+        setLockedHeight(containerRef.current.offsetHeight);
+      }
 
-    setSubmitted(true);
-  } catch (err) {
-    console.error(err);
-    // tady ideálně zobrazit chybu, ale nechám na tobě
-    setSubmitted(true);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+      await fetch('https://hooks.zapier.com/hooks/catch/25611644/ue3y3ao/', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new URLSearchParams(payload), // důležité: žádné JSON a žádné headers
+      });
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      // tady ideálně zobrazit chybu, ale nechám na tobě
+      setSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section ref={ref} className="py-24 md:py-32 bg-[#0a1111] relative overflow-hidden flex items-center">
@@ -116,7 +123,11 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
           <div className="lg:w-[55%] w-full">
             <div className="relative w-full max-w-xl mx-auto lg:ml-auto">
               <div className="absolute -inset-1 bg-brand/10 rounded-[3rem] blur-2xl pointer-events-none"></div>
-              <div className="relative bg-[#111c1c]/80 backdrop-blur-md border border-white/10 rounded-[3rem] p-8 md:p-12 shadow-2xl transition-all duration-500 min-h-[450px] flex flex-col justify-center">
+              <div 
+                ref={containerRef}
+                style={lockedHeight ? { minHeight: `${lockedHeight}px` } : {}}
+                className="relative bg-[#111c1c]/80 backdrop-blur-md border border-white/10 rounded-[3rem] p-8 md:p-12 shadow-2xl transition-all duration-500 min-h-[450px] flex flex-col justify-center"
+              >
                 
                 {!submitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6 animate-fade-up">
