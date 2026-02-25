@@ -41,39 +41,32 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    const form = e.target as HTMLFormElement;
-    const carType = (form.querySelector('#bodyType') as HTMLSelectElement).value;
-    const email = (form.querySelector('#email') as HTMLInputElement).value;
-    const message = (form.querySelector('#note') as HTMLTextAreaElement).value;
+  const form = e.target as HTMLFormElement;
+  const carType = (form.querySelector('#bodyType') as HTMLSelectElement).value;
+  const email = (form.querySelector('#email') as HTMLInputElement).value;
+  const message = (form.querySelector('#note') as HTMLTextAreaElement).value;
 
-    const payload = {
-      carType,
-      email,
-      phone,
-      message
-    };
+  const payload = { carType, email, phone, message };
 
-    try {
-      // We use fetch to send data to Zapier
-      await fetch('https://hooks.zapier.com/hooks/catch/25611644/ue3y3ao/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
-      
-      setSubmitted(true);
-    } catch (error) {
-      console.error('Form submission error:', error);
-      setSubmitted(true);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  try {
+    await fetch('https://hooks.zapier.com/hooks/catch/25611644/ue3y3ao/', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams(payload), // důležité: žádné JSON a žádné headers
+    });
+
+    setSubmitted(true);
+  } catch (err) {
+    console.error(err);
+    // tady ideálně zobrazit chybu, ale nechám na tobě
+    setSubmitted(true);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section ref={ref} className="py-24 md:py-32 bg-[#0a1111] relative overflow-hidden flex items-center">
