@@ -77,7 +77,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                   </div>
                 </div>
                 <p className="text-[10px] md:text-sm font-black text-white">
-                  4,9 / 5
+                  5 / 5
                 </p>
               </div>
             </div>
