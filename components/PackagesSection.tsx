@@ -13,25 +13,25 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
     {
       id: 0,
       name: 'Bikini Front',
-      image: '/tesla-bikini-front.png',
+      image: '/ppf-bikini-front.png',
       description: 'Základní ochrana nejvíce exponovaných částí: přední hrana kapoty, zrcátka a náběžné hrany blatníků.'
     },
     {
       id: 1,
       name: 'Full Front',
-      image: '/tesla-full-front.png',
+      image: '/ppf-full-front.png',
       description: 'Kompletní ochrana celého předku vozu. Chrání celou kapotu, nárazník, světla i oba blatníky.'
     },
     {
       id: 2,
       name: 'Full Car',
-      image: '/tesla-full.png',
+      image: '/ppf-full-car.png',
       description: 'Maximální bezpečí. Celý vůz je v neprůstřelném krunýři. Žádné kompromisy, žádné obavy o lak.'
     },
     {
       id: 3,
       name: 'Individuální',
-      image: '/tesla-custom.png',
+      image: '/ppf-custom.png',
       description: 'Potřebujete chránit jen prahy, nakládací hranu kufru nebo interiér? Navrhneme řešení na míru.'
     }
   ];
