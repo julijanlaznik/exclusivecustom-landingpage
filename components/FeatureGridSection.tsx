@@ -42,7 +42,7 @@ const FeatureGridSection: React.FC<FeatureGridSectionProps> = ({ onCtaClick }) =
         {/* Centered Heading Section - Popup Animation */}
         <div className={`text-center max-w-4xl mx-auto mb-20 transition-all duration-[1200ms] cubic-bezier(0.34, 1.56, 0.64, 1) ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-20 scale-95'}`}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 leading-tight font-sans">
-            PPF fólie<br>nejúčinnější cesta, jak ochránit váš vůz</br> 
+            PPF fólie nejúčinnější cesta, jak ochránit váš vůz
           </h2>
           <p className="text-gray-500 text-lg md:text-xl leading-relaxed font-light font-sans">
             Zapomeňte na stres z poškození laku. Zvolte ochranu s 99,9% účinností a samohojícím efektem.
