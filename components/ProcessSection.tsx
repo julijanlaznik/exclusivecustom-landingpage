@@ -36,28 +36,28 @@ const ProcessSection: React.FC = () => {
       number: '02',
       title: 'Příprava vozu na aplikaci',
       desc: 'Důkladně vyčistíme a odmastíme povrch laku. Odstraníme všechny nečistoty, prach a stopy předchozích ošetření. Tento krok je základ kvalitního výsledku.',
-      image: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=800',
+      image: '/priprava-vozu.png',
       isLight: false
     },
     {
       number: '03',
       title: 'Precizní aplikace fólie',
       desc: 'Nanášíme PPF fólii s milimetrovou přesností na každý detail. Pracujeme v kontrolovaném prostředí, aby nedošlo k žádným nečistotám nebo bublinám.',
-      image: 'https://images.unsplash.com/photo-1621359953476-b16299a78001?auto=format&fit=crop&q=80&w=800',
+      image: '/ppf-aplikace-how.png',
       isLight: false
     },
     {
       number: '04',
       title: 'Kontrola kvality',
       desc: 'Po aplikaci zkontrolujeme každý centimetr fólie z každého úhlu. Hledáme jakékoli nedokonalosti – náš standard je 100% perfektní výsledek.',
-      image: 'https://images.unsplash.com/photo-1507133351264-39817f34cee4?auto=format&fit=crop&q=80&w=800',
+      image: '/kontrola.png',
       isLight: false
     },
     {
       number: '05',
       title: 'Předání vašeho vozu',
       desc: 'Auto vám předáme kompletně chráněné se zárukou na práci i materiál. Zároveň vám poskytneme tipy na údržbu, aby vám fólie vydržela co nejdéle.',
-      image: 'https://images.unsplash.com/photo-1567818735868-e71b99932e29?auto=format&fit=crop&q=80&w=800',
+      image: '/predani-vozu.png',
       isLight: false
     }
   ];
