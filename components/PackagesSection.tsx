@@ -31,7 +31,7 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
     {
       id: 3,
       name: 'Individuální',
-      image: '/ppf-custom.png',
+      image: '/ppf-custom-solution.png',
       description: 'Potřebujete chránit jen prahy, nakládací hranu kufru nebo interiér? Navrhneme řešení na míru.'
     }
   ];
