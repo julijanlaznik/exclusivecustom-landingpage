@@ -85,7 +85,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
       </div>
 
-      <div className="relative z-20 bg-white/[0.02] backdrop-blur-md border-t border-white/5">
+      <div className="relative z-20 bg-white/[0.02] border-t border-white/5">
         <div className="w-full px-4 md:px-10 lg:px-12 py-4 md:py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-4 md:gap-8">
             <div className="flex flex-col items-start animate-pop-up delay-3">
