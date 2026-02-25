@@ -84,18 +84,11 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
           <div className="relative bg-white rounded-[2.5rem] border border-gray-100 overflow-hidden shadow-xl">
             {/* Image Container - Wider aspect for compactness */}
             <div className="aspect-[16/9] w-full relative overflow-hidden bg-gray-100">
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={activePackage}
-                  src={packages[activePackage].image}
-                  alt={packages[activePackage].name}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="w-full h-full object-cover"
-                />
-              </AnimatePresence>
+              <img
+  src={packages[activePackage].image}
+  alt={packages[activePackage].name}
+  className="w-full h-full object-cover"
+/>
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
 
