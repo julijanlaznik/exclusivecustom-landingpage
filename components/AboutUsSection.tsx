@@ -82,14 +82,14 @@ const AboutUsSection: React.FC = () => {
           <div className={`flex-1 relative h-auto md:h-[500px] w-full transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex flex-col md:block gap-4`}>
             <div className="relative md:absolute left-0 top-0 w-full md:w-[70%] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl z-10 md:transform md:-rotate-3 border-4 md:border-8 border-white">
               <img 
-                src="/interier-wide.png" 
+                src="/interier-logo.png" 
                 alt="Exclusive Customs Showroom" 
                 className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-1000"
               />
             </div>
             <div className="relative md:absolute right-0 bottom-0 w-full md:w-[65%] aspect-square rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] z-20 md:transform md:rotate-3 border-4 md:border-8 border-white md:translate-y-4">
               <img 
-                src="/interier-logo.png" 
+                src="/interier-wide.png" 
                 alt="Workshop Detailing" 
                 className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-1000"
               />
