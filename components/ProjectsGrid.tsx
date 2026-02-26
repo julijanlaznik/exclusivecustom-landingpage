@@ -72,13 +72,13 @@ const ProjectsGrid: React.FC = () => {
     { url: '/foto10.webp', alt: 'Tesla Model S Plaid', span: 'md:col-span-2 md:row-span-1' },
     { url: '/foto11.webp', alt: 'McLaren 720S', span: 'md:col-span-2 md:row-span-1' },
     // Fix: Added missing opening quote for 'alt' value
-    { url: '/foto1.webp', alt: 'Audi R8 V10', span: 'md:col-span-1 md:row-span-2' },
-    { url: '/foto2.webp', alt: 'Rolls-Royce Ghost', span: 'md:col-span-2 md:row-span-2' },
-    { url: '/foto3.webp', alt: 'Bentley Continental', span: 'md:col-span-1 md:row-span-1' },
-    { url: '/foto4.webp', alt: 'Corvette C8', span: 'md:col-span-2 md:row-span-1' },
-    { url: '/foto5.webp', alt: 'Shelby Cobra', span: 'md:col-span-1 md:row-span-1' },
-    { url: '/foto6.webp', alt: 'BMW M8', span: 'md:col-span-1 md:row-span-1' },
-    { url: '/foto7.webp', alt: 'Jaguar F-Type', span: 'md:col-span-1 md:row-span-1' },
+    { url: '/foto12.webp', alt: 'Audi R8 V10', span: 'md:col-span-1 md:row-span-2' },
+    { url: '/foto1.webp', alt: 'Rolls-Royce Ghost', span: 'md:col-span-2 md:row-span-2' },
+    { url: '/foto2.webp', alt: 'Bentley Continental', span: 'md:col-span-1 md:row-span-1' },
+    { url: '/foto3.webp', alt: 'Corvette C8', span: 'md:col-span-2 md:row-span-1' },
+    { url: '/foto4.webp', alt: 'Shelby Cobra', span: 'md:col-span-1 md:row-span-1' },
+    { url: '/foto5.webp', alt: 'BMW M8', span: 'md:col-span-1 md:row-span-1' },
+    { url: '/foto6.webp', alt: 'Jaguar F-Type', span: 'md:col-span-1 md:row-span-1' },
   ];
 
   return (
