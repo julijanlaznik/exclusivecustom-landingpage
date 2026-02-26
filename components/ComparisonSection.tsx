@@ -69,7 +69,7 @@ const ComparisonSection: React.FC = () => {
             <p className="text-gray-600 text-sm md:text-lg leading-relaxed font-sans">
               Každý den vaše auto čelí ostrým kamínkům, špíně a počasí. Bez ochrany rychle ztrácí lesk a hodnotu. 
               <span className="block mt-3 md:mt-4 text-black font-medium">
-                S ochranou? Vypadá jako nové roky dopředu – a to se pozná nejen na vzhledu, ale i na ceně při prodeji.
+                S ochranou? Vypadá jako nové roky dopředu – lak si zachová svou hloubku, lesk i charakter.
               </span>
             </p>
           </div>
