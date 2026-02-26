@@ -96,14 +96,13 @@ const ProcessSection: React.FC = () => {
         </div>
       </div>
 
-      {/* SCROLL CONTAINER */}
+      {/* SCROLL CONTAINER - full width, cards align with heading via calc padding */}
       <div
         ref={scrollContainerRef}
         className="overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {/* ALIGN WRAPPER */}
-        <div className="flex gap-6 pr-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex gap-6 pr-8 min-w-max pl-[calc((100vw-min(80rem,100vw))/2+1rem)] sm:pl-[calc((100vw-min(80rem,100vw))/2+1.5rem)] lg:pl-[calc((100vw-min(80rem,100vw))/2+2rem)]">
           {steps.map((step, index) => (
             <div
               key={index}
