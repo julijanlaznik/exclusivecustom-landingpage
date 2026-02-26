@@ -9,12 +9,11 @@ const videos = [
   },
   {
     id: 2,
-    url: '/https://www.instagram.com/p/DUYwnlMCCXw/',
+    url: '/igreel2.mp4',
   },
   {
     id: 3,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-washing-a-car-with-a-pressure-washer-41586-large.mp4',
-    poster: 'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=800',
+    url: '/igreel4.mp4',
   },
   {
     id: 4,
