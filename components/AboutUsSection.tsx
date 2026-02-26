@@ -33,7 +33,7 @@ const AboutUsSection: React.FC = () => {
           <div className={`flex-1 space-y-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight font-sans">
-                Jsme Exclusive Custom
+                Jsme Exclusive Customs
               </h2>
               <p className="text-lg text-gray-500 leading-relaxed font-light font-sans max-w-xl">
                 Jsme tým nadšenců do aut, kteří věří v poctivou práci a precizní výsledek. Za roky zkušeností jsme polepili a ochránili stovky vozů všech značek – od běžných denních aut až po sportovní modely a luxusní vozy.
@@ -79,20 +79,41 @@ const AboutUsSection: React.FC = () => {
           </div>
 
           {/* Right: Overlapping Photos */}
-          <div className={`flex-1 relative h-auto md:h-[500px] w-full transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex flex-col md:block gap-4`}>
-            <div className="relative md:absolute left-0 top-0 w-full md:w-[70%] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl z-10 md:transform md:-rotate-3 border-4 md:border-8 border-white">
-              <img 
-                src="/interier-logo.png" 
-                alt="Exclusive Customs Showroom" 
-                className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-1000"
-              />
-            </div>
-            <div className="relative md:absolute right-0 bottom-0 w-full md:w-[65%] aspect-square rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] z-20 md:transform md:rotate-3 border-4 md:border-8 border-white md:translate-y-4">
-              <img 
-                src="/interier-wide.png" 
-                alt="Workshop Detailing" 
-                className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-1000"
-              />
+          <div className={`flex-1 relative min-h-[500px] md:h-[600px] w-full transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+            {/* Mobile Grid / Desktop Scattered */}
+            <div className="grid grid-cols-2 gap-4 md:block h-full">
+              {/* Photo 1 */}
+              <div className="relative md:absolute md:left-0 md:top-0 w-full md:w-[55%] aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl z-10 md:transform md:-rotate-6 border-4 md:border-8 border-white">
+                <img 
+                  src="/interier-logo.png" 
+                  alt="Exclusive Customs Showroom" 
+                  className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              {/* Photo 2 */}
+              <div className="relative md:absolute md:right-4 md:top-12 w-full md:w-[50%] aspect-square rounded-[2rem] overflow-hidden shadow-xl z-20 md:transform md:rotate-3 border-4 md:border-8 border-white">
+                <img 
+                  src="/interier-wide.png" 
+                  alt="Workshop Detailing" 
+                  className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              {/* Photo 3 */}
+              <div className="relative md:absolute md:left-12 md:bottom-8 w-full md:w-[45%] aspect-square rounded-[2rem] overflow-hidden shadow-xl z-30 md:transform md:rotate-6 border-4 md:border-8 border-white">
+                <img 
+                  src="/interier-schuzka.png" 
+                  alt="Car Detailing Process" 
+                  className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              {/* Photo 4 */}
+              <div className="relative md:absolute md:right-0 md:bottom-0 w-full md:w-[55%] aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl z-40 md:transform md:-rotate-2 border-4 md:border-8 border-white">
+                <img 
+                  src="/interier-prace.png" 
+                  alt="Luxury Car Result" 
+                  className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
             </div>
           </div>
 
