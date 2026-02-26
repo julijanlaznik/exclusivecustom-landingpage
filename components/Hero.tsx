@@ -24,10 +24,10 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           loop 
           muted 
           playsInline 
-          poster="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=2000"
+          poster="/videoplayback.mp4"
           className="w-full h-full object-cover"
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-man-polishing-a-car-with-a-machine-41584-large.mp4" type="video/mp4" />
+          <source src="/videoplayback.mp4" type="video/mp4" />
           <img 
             src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=2000" 
             alt="PPF Application" 
