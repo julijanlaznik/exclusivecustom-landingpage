@@ -29,7 +29,7 @@ const ProcessSection: React.FC = () => {
       number: '01',
       title: 'První setkání a konzultace',
       desc: 'Probereme společně vaše potřeby, styl ježdění a rozsah ochrany, který dává smysl pro váš vůz. Odpovíme na všechny vaše otázky a navrhneme řešení přesně na míru.',
-      image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800',
+      image: '/konzultace.png',
       isLight: true
     },
     {
