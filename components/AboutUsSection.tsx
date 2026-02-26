@@ -33,7 +33,7 @@ const AboutUsSection: React.FC = () => {
           <div className={`flex-1 space-y-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 tracking-tight font-sans">
-                Jsme Exclusive Customs
+                Jsme Exclusive Custom
               </h2>
               <p className="text-lg text-gray-500 leading-relaxed font-light font-sans max-w-xl">
                 Jsme tým nadšenců do aut, kteří věří v poctivou práci a precizní výsledek. Za roky zkušeností jsme polepili a ochránili stovky vozů všech značek – od běžných denních aut až po sportovní modely a luxusní vozy.
