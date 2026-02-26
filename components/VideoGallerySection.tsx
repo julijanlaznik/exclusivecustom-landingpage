@@ -6,7 +6,6 @@ const videos = [
   {
     id: 1,
     url: '/igreel1.mp4',
-    poster: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 2,
