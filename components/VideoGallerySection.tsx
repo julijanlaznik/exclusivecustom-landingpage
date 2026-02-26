@@ -9,8 +9,7 @@ const videos = [
   },
   {
     id: 2,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-cleaning-the-interior-of-a-car-41585-large.mp4',
-    poster: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=800',
+    url: '/https://www.instagram.com/p/DUYwnlMCCXw/',
   },
   {
     id: 3,
