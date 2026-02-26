@@ -102,7 +102,7 @@ const ProcessSection: React.FC = () => {
         className="overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <div className="flex gap-6 pr-8 min-w-max pl-[calc((100vw-min(80rem,100vw))/2+1rem)] sm:pl-[calc((100vw-min(80rem,100vw))/2+1.5rem)] lg:pl-[calc((100vw-min(80rem,100vw))/2+2rem)]">
+        <div className="process-scroll-content flex gap-6 pr-8 min-w-max">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -202,6 +202,19 @@ const ProcessSection: React.FC = () => {
       <style>{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+        .process-scroll-content {
+          padding-left: calc((100vw - min(80rem, 100vw)) / 2 + 1rem);
+        }
+        @media (min-width: 640px) {
+          .process-scroll-content {
+            padding-left: calc((100vw - min(80rem, 100vw)) / 2 + 1.5rem);
+          }
+        }
+        @media (min-width: 1024px) {
+          .process-scroll-content {
+            padding-left: calc((100vw - min(80rem, 100vw)) / 2 + 2rem);
+          }
         }
       `}</style>
     </section>
