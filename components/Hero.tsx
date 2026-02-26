@@ -24,12 +24,12 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           loop 
           muted 
           playsInline 
-          poster="videoplayback.mp4"
+          poster="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=2000"
           className="w-full h-full object-cover"
         >
-          <source src="videoplayback.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-man-polishing-a-car-with-a-machine-41584-large.mp4" type="video/mp4" />
           <img 
-            src="videoplayback.mp4" 
+            src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=2000" 
             alt="PPF Application" 
             className="w-full h-full object-cover"
           />
@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       <div className="relative z-10 flex-grow flex flex-col justify-end">
         <div className="w-full px-4 md:px-10 lg:px-12 text-left pt-32 pb-8 md:pb-16">
           <div className="max-w-4xl">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] font-oxanium uppercase drop-shadow-2xl animate-fade-up">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] font-oxanium uppercase drop-shadow-2xl animate-fade-up">
               99% OCHRANA<br />VAŠEHO VOZU
             </h1>
             
@@ -85,7 +85,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
       </div>
 
-      <div className="relative z-20 bg-white/[0.02] border-t border-white/5">
+      <div className="relative z-20 bg-white/[0.02] backdrop-blur-md border-t border-white/5">
         <div className="w-full px-4 md:px-10 lg:px-12 py-4 md:py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-4 md:gap-8">
             <div className="flex flex-col items-start animate-pop-up delay-3">
