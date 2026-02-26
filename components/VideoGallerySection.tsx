@@ -5,7 +5,7 @@ import { Play } from 'lucide-react';
 const videos = [
   {
     id: 1,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-polishing-a-car-with-a-machine-41584-large.mp4',
+    url: '/igreel1.mp4',
     poster: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=800',
   },
   {
