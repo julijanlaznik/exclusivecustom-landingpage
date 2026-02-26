@@ -196,7 +196,7 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
                         {!isSubmitting && <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>}
                       </button>
                       <p className="text-center mt-6 text-[10px] md:text-xs text-white/30 uppercase tracking-[0.2em] font-sans">
-                        Odpovídáme průměrně do 30 minut
+                        Odpovídáme průměrně do 2 hodin
                       </p>
                     </div>
                   </form>
@@ -213,6 +213,22 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
                     </p>
                   </div>
                 )}
+              </div>
+
+              {/* Direct Phone Contact */}
+              <div className="mt-6 flex flex-col items-center lg:items-end animate-fade-up delay-3">
+                <p className="text-white/30 text-[9px] uppercase tracking-[0.2em] font-sans mb-2">Nebo nám rovnou zavolejte</p>
+                <a 
+                  href="tel:+420774905905" 
+                  className="group flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand/30 py-3 px-6 rounded-full transition-all duration-300"
+                >
+                  <div className="w-8 h-8 bg-brand/20 rounded-full flex items-center justify-center text-brand group-hover:scale-110 transition-transform">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <span className="text-white text-lg md:text-xl font-bold font-sans tracking-tight">+420 774 905 905</span>
+                </a>
               </div>
             </div>
           </div>

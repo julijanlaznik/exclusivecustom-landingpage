@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
 import TermsPage from './components/TermsPage';
 import LeadPopup from './components/LeadPopup';
+import FloatingPhone from './components/FloatingPhone';
 
 type View = 'home' | 'terms';
 
@@ -73,6 +74,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col relative">
       <ScrollProgress />
       <LeadPopup onCtaClick={scrollToForm} />
+      <FloatingPhone />
       <Header 
         onLogoClick={navigateToHome} 
         onCtaClick={scrollToForm}
