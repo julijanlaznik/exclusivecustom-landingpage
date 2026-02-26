@@ -99,28 +99,23 @@ const ProcessSection: React.FC = () => {
       {/* SCROLL CONTAINER */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
+        className="overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {/* 
-           🔥 Zarovnání na nadpis:
-           Používáme stejné paddingy jako header
-        */}
-        <div className="flex gap-6 pr-8 pl-4 sm:pl-6 lg:pl-8">
-
+        {/* ALIGN WRAPPER */}
+        <div className="flex gap-6 pr-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {steps.map((step, index) => (
             <div
               key={index}
               className={`
-                flex-shrink-0 
-                w-[300px] md:w-[450px] 
-                h-[500px] md:h-[600px] 
-                rounded-[2.5rem] 
-                overflow-hidden 
-                relative 
-                snap-start 
+                flex-shrink-0
+                w-[300px] md:w-[450px]
+                h-[500px] md:h-[600px]
+                rounded-[2.5rem]
+                overflow-hidden
+                relative
+                snap-start
                 transition-all duration-700 ease-out
-                first:-ml-4 sm:first:-ml-6 lg:first:-ml-8
                 ${step.isLight ? 'bg-[#f7f7f7]' : 'bg-black'}
               `}
               style={{
@@ -193,7 +188,6 @@ const ProcessSection: React.FC = () => {
         <button
           onClick={() => scroll('left')}
           className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all duration-300"
-          aria-label="Předchozí krok"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
@@ -201,7 +195,6 @@ const ProcessSection: React.FC = () => {
         <button
           onClick={() => scroll('right')}
           className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all duration-300"
-          aria-label="Další krok"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
