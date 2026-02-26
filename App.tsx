@@ -8,6 +8,7 @@ import ForWhoSection from './components/ForWhoSection';
 import PackagesSection from './components/PackagesSection';
 import ProcessSection from './components/ProcessSection';
 import AboutUsSection from './components/AboutUsSection';
+import VideoGallerySection from './components/VideoGallerySection';
 import FaqSection from './components/FaqSection';
 import FormSection from './components/FormSection';
 import ProjectsGrid from './components/ProjectsGrid';
@@ -94,6 +95,7 @@ const App: React.FC = () => {
             <ProcessSection />
             <FormSection ref={formRef} />
             <AboutUsSection />
+            <VideoGallerySection />
             <FaqSection />
             <ProjectsGrid />
           </>
