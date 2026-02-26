@@ -17,8 +17,7 @@ const videos = [
   },
   {
     id: 4,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-polishing-a-car-with-a-machine-41584-large.mp4',
-    poster: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800',
+    url: '/igreel4.mp4',
   }
 ];
 
