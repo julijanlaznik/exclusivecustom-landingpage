@@ -102,7 +102,7 @@ const ProcessSection: React.FC = () => {
         className="overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <div className="process-scroll-content flex gap-6 pr-8 min-w-max">
+        <div className="process-scroll-content flex gap-6 pr-8 pl-4 sm:pl-6 lg:pl-8 min-w-max">
           {steps.map((step, index) => (
             <div
               key={index}
