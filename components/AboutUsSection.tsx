@@ -85,7 +85,7 @@ const AboutUsSection: React.FC = () => {
               {/* Photo 1 */}
               <div className="relative md:absolute md:left-0 md:top-0 w-full md:w-[55%] aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl z-10 md:transform md:-rotate-6 border-4 md:border-8 border-white">
                 <img 
-                  src="/interier-logo.png" 
+                  src="/foto1.webp" 
                   alt="Exclusive Customs Showroom" 
                   className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
                 />
@@ -101,7 +101,7 @@ const AboutUsSection: React.FC = () => {
               {/* Photo 3 */}
               <div className="relative md:absolute md:left-12 md:bottom-8 w-full md:w-[45%] aspect-square rounded-[2rem] overflow-hidden shadow-xl z-30 md:transform md:rotate-6 border-4 md:border-8 border-white">
                 <img 
-                  src="/interier-schuzka.png" 
+                  src="/interier-logo.png" 
                   alt="Car Detailing Process" 
                   className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700"
                 />
