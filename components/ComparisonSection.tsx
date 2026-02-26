@@ -120,7 +120,7 @@ const ComparisonSection: React.FC = () => {
 
           <div className="flex justify-between mt-6">
             <div className="bg-white px-3 py-1.5 md:px-5 md:py-2 border border-gray-100 shadow-sm rounded-lg">
-               <span className="text-[9px] md:text-xs font-bold uppercase tracking-wider text-gray-400">Bez ochrany</span>
+               <span className="text-[9px] md:text-xs font-bold uppercase tracking-wider text-gray-400">Bez PPF fólie</span>
             </div>
             <div className="bg-brand/10 px-3 py-1.5 md:px-5 md:py-2 border border-brand/20 shadow-sm rounded-lg">
                <span className="text-[9px] md:text-xs font-bold uppercase tracking-wider text-brand-dark">S PPF fólií</span>
