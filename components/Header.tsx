@@ -26,11 +26,11 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, onCtaClick, showStickyCta 
             onClick={onLogoClick}
             className="flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95 outline-none focus:outline-none"
           >
-            <img 
-              src="/logo-exclusivecustom.png" 
-              alt="Exclusive Customs Logo" 
-              className="w-20 h-20 md:w-40 md:h-40 object-contain -ml-8 md:-ml-18"
-            />
+            <img
+  src="/logo-exclusivecustom.png"
+  alt="Exclusive Customs Logo"
+  className="w-40 h-40 md:w-20 md:h-20 object-contain -ml-8 md:-ml-18"
+/>
             <span className="sr-only">Exclusive Customs - Home</span>
           </button>
         </div>
