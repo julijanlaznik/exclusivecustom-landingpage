@@ -13,7 +13,7 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
     {
       id: 0,
       name: 'Bikini Front',
-      image: '/ppf-bikini-front.png',
+      image: '/ppf-bikini.png',
       description: 'Základní ochrana nejvíce exponovaných částí: přední hrana kapoty, zrcátka a náběžné hrany blatníků.'
     },
     {
