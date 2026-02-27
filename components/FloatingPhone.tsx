@@ -8,14 +8,21 @@ const FloatingPhone: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      const scrollY = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+      
+      // Hide button if we are near the bottom (footer area)
+      const isNearBottom = scrollY + windowHeight > scrollHeight - 150;
+
+      if (scrollY > 400 && !isNearBottom) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
