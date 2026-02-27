@@ -19,7 +19,7 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
     {
       id: 1,
       name: 'Full Front',
-      image: '/ppf-full-front.png',
+      image: '/ppf-fullfront.png',
       description: 'Kompletní ochrana celého předku vozu. Chrání celou kapotu, nárazník, světla i oba blatníky.'
     },
     {
