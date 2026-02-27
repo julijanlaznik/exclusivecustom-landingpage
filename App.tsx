@@ -4,13 +4,11 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ComparisonSection from './components/ComparisonSection';
 import FeatureGridSection from './components/FeatureGridSection';
-import ThankYouSection from './components/ThankYouSection';
 import ForWhoSection from './components/ForWhoSection';
 import PackagesSection from './components/PackagesSection';
 import ProcessSection from './components/ProcessSection';
 import AboutUsSection from './components/AboutUsSection';
 import VideoGallerySection from './components/VideoGallerySection';
-import CEOSection from './components/CEOSection';
 import FaqSection from './components/FaqSection';
 import FormSection from './components/FormSection';
 import ProjectsGrid from './components/ProjectsGrid';
@@ -19,14 +17,12 @@ import ScrollProgress from './components/ScrollProgress';
 import TermsPage from './components/TermsPage';
 import LeadPopup from './components/LeadPopup';
 import FloatingPhone from './components/FloatingPhone';
-import GiftPopup from './components/GiftPopup';
 
 type View = 'home' | 'terms';
 
 const App: React.FC = () => {
   const [view, setView] = useState<View>('home');
   const [showStickyCta, setShowStickyCta] = useState(false);
-  const [blockLeadPopup, setBlockLeadPopup] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -53,17 +49,6 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [view]);
 
-  const handleGiftModalToggle = (isOpen: boolean) => {
-    if (isOpen) {
-      setBlockLeadPopup(true);
-    } else {
-      // Delay unblocking lead popup by 10 seconds after gift modal closes
-      setTimeout(() => {
-        setBlockLeadPopup(false);
-      }, 10000);
-    }
-  };
-
   const scrollToForm = () => {
     if (view !== 'home') {
       setView('home');
@@ -89,7 +74,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col relative">
       <ScrollProgress />
-      <LeadPopup onCtaClick={scrollToForm} disabled={blockLeadPopup} />
+      <LeadPopup onCtaClick={scrollToForm} />
       <FloatingPhone />
       <Header 
         onLogoClick={navigateToHome} 
@@ -105,15 +90,12 @@ const App: React.FC = () => {
             </div>
             <ComparisonSection />
             <FeatureGridSection onCtaClick={scrollToForm} />
-            <GiftPopup onCtaClick={scrollToForm} onModalToggle={handleGiftModalToggle} />
-            <ThankYouSection />
             <ForWhoSection onCtaClick={scrollToForm} />
             <PackagesSection onCtaClick={scrollToForm} />
             <ProcessSection />
             <FormSection ref={formRef} />
             <AboutUsSection />
             <VideoGallerySection />
-            <CEOSection />
             <FaqSection />
             <ProjectsGrid />
           </>
