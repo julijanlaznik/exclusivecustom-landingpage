@@ -5,19 +5,19 @@ import { Play } from 'lucide-react';
 const videos = [
   {
     id: 1,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-polishing-a-car-with-a-machine-41584-large.mp4',
+    url: '/igreel1.mp4',
   },
   {
     id: 2,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-car-polishing-detail-41583-large.mp4',
+    url: '/igreel2.mp4',
   },
   {
     id: 3,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-man-cleaning-a-car-with-a-cloth-41585-large.mp4',
+    url: '/igreel3.mp4',
   },
   {
     id: 4,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-car-washing-detail-41582-large.mp4',
+    url: '/igreel4.mp4',
   }
 ];
 
