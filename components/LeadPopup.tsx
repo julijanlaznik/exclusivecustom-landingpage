@@ -5,29 +5,21 @@ import { X } from 'lucide-react';
 
 interface LeadPopupProps {
   onCtaClick: () => void;
-  disabled?: boolean;
 }
 
-const LeadPopup: React.FC<LeadPopupProps> = ({ onCtaClick, disabled }) => {
+const LeadPopup: React.FC<LeadPopupProps> = ({ onCtaClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (disabled && isOpen) {
-      setIsOpen(false);
-      return;
-    }
-
-    if (disabled) return;
-
     const timer = setTimeout(() => {
       const hasSeenPopup = sessionStorage.getItem('hasSeenLeadPopup');
-      if (!hasSeenPopup && !disabled) {
+      if (!hasSeenPopup) {
         setIsOpen(true);
       }
     }, 20000); // 20 seconds
 
     return () => clearTimeout(timer);
-  }, [disabled, isOpen]);
+  }, []);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -71,7 +63,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ onCtaClick, disabled }) => {
               {/* Image Side */}
               <div className="md:w-2/5 h-48 md:h-auto relative">
                 <img
-                  src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800"
+                  src="/foto1.webp"
                   alt="PPF Detail"
                   className="w-full h-full object-cover"
                 />
