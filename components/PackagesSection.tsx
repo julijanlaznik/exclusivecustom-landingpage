@@ -25,7 +25,7 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
     {
       id: 2,
       name: 'Full Car',
-      image: '/ppf-full-car.png',
+      image: '/ppf-fullcar.png',
       description: 'Maximální bezpečí. Celý vůz je v neprůstřelném krunýři. Žádné kompromisy, žádné obavy o lak.'
     },
     {
