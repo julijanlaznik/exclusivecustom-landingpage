@@ -179,7 +179,7 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
                         <textarea
                           id="note"
                           rows={3}
-                          placeholder="Chcete se zeptat na termín nebo konkrétní balíček? (Zcela volitelné)"
+                          placeholder="Mám zájem o... (Zcela volitelné)"
                           className="w-full bg-white/5 border border-white/10 py-6 px-8 text-white placeholder:text-white/20 rounded-[2rem] outline-none focus:border-brand focus:bg-white/10 transition-all font-sans text-lg md:text-xl resize-none"
                         ></textarea>
                       </div>
