@@ -119,7 +119,7 @@ const PackagesSection: React.FC<PackagesSectionProps> = ({ onCtaClick }) => {
                   className="group/btn relative px-10 py-4 bg-brand text-black font-bold text-sm md:text-base rounded-full transition-all duration-500 shadow-md overflow-hidden active:scale-[0.98]"
                 >
                   <span className="relative z-10 font-oxanium uppercase tracking-[0.1em]">
-                    Bezplatná konzultace →
+                    Zjistit orientační cenu →
                   </span>
                   <div className="absolute inset-0 bg-black translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500"></div>
                   <div className="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500"></div>
