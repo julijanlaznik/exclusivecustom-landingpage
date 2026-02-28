@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             </h1>
             
             <p className="mt-4 md:mt-6 text-sm md:text-xl text-white/90 max-w-lg leading-relaxed font-extralight drop-shadow-md animate-fade-up delay-1">
-              PPF fólie ochrání váš vůz před kamínky, <br className="hidden md:block" />škrábanci i UV zářením – bez kompromisů.
+              Chraňte hodnotu svého vozu dřív, <br className="hidden md:block" />než ji začne snižovat poškození laku.
             </p>
             
             <div className="mt-8 md:mt-10 flex flex-col items-start animate-fade-up delay-2">
