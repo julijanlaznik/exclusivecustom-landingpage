@@ -42,11 +42,11 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="w-full px-4 md:px-10 lg:px-12 text-left pt-32 pb-8 md:pb-16">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] font-oxanium uppercase drop-shadow-2xl animate-fade-up">
-              99% OCHRANA<br />VAŠEHO VOZU
+              KOLIK VÁS BUDE STÁT<br />PRVNÍ ŠKRÁBANEC ?
             </h1>
             
             <p className="mt-4 md:mt-6 text-sm md:text-xl text-white/90 max-w-lg leading-relaxed font-extralight drop-shadow-md animate-fade-up delay-1">
-              Maximální ochrana na roky dopředu.<br className="hidden md:block" />Důvěřuje nám 500+ majitelů vozů.
+              PPF fólie ochrání váš vůz před kamínky, <br className="hidden md:block" />škrábanci i UV zářením – bez kompromisů.
             </p>
             
             <div className="mt-8 md:mt-10 flex flex-col items-start animate-fade-up delay-2">
