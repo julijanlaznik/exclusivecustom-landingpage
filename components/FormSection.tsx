@@ -95,7 +95,7 @@ const FormSection = forwardRef<HTMLDivElement>((props, ref) => {
             </h2>
             
             <p className="mt-8 text-white/40 text-lg md:text-xl font-light leading-relaxed max-w-sm mx-auto lg:mx-0 font-sans animate-fade-up delay-1">
-              Prémiová PPF ochrana pro vozy, na kterých skutečně záleží. Stačí vyplnit kontakt a my se postaráme o zbytek.
+              Prémiová PPF ochrana pro vozy, na kterých skutečně záleží. Stačí vyplnit fomrulář a my Vás budeme kontaktovat.
             </p>
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-up delay-2">
